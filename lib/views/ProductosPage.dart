@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:t4_1_navegacion/viewmodels/Pedidos_viewmodel.dart';
 import 'package:t4_1_navegacion/views/widgets/producto_card_item.dart';
 
+/// Página de productos donde se muestran los productos disponibles en una lista para agregar al pedido.
+/// Recibe un [PedidosViewmodel] para gestionar el estado del pedido.
+/// Permite agregar o quitar productos y confirmar o cancelar el pedido.
 class Productospage extends StatefulWidget {
   final PedidosViewmodel viewmodel;
 

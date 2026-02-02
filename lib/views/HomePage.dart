@@ -4,6 +4,10 @@ import 'package:t4_1_navegacion/viewmodels/HomeViewModel.dart';
 import 'package:t4_1_navegacion/views/CreatePage.dart';
 import 'package:t4_1_navegacion/views/widgets/pedido_card_widget.dart';
 
+/// Página principal que muestra la lista de pedidos.
+/// Permite crear nuevos pedidos y editar los existentes.
+/// Utiliza un [Homeviewmodel] para gestionar el estado de los pedidos.
+
 class HomePage extends StatefulWidget {
   static const nombreRuta = "/";
   //Constructor

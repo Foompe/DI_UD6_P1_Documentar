@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:t4_1_navegacion/models/pedido.dart';
 import 'package:t4_1_navegacion/views/widgets/producto_card_widget.dart';
 
+/// Página que muestra los detalles de un pedido específico.
+/// Recibe un objeto [Pedido] para mostrar su información.
+/// Muestra el nombre de la mesa, la lista de productos con sus cantidades
+/// y el precio total del pedido. Incluye un botón para volver a la página anterior.
 class DetallesPage extends StatelessWidget {
   static const nombreRuta = "/detalles";
   final Pedido pedido;

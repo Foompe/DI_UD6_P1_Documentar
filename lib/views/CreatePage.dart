@@ -5,6 +5,13 @@ import 'package:t4_1_navegacion/viewmodels/Pedidos_viewmodel.dart';
 import 'package:t4_1_navegacion/views/DetallesPage.dart';
 import 'package:t4_1_navegacion/views/ProductosPage.dart';
 
+
+/// Página para crear o editar un pedido
+/// Recibe un pedido existente para editar o null para crear uno nuevo
+/// Recibe el HomeViewModel para validar nombres
+/// Muestra campos para nombre de mesa y botones para añadir productos y ver resumen
+/// Botones para cancelar o guardar el pedido en la parte inferior
+/// Valida que el nombre no esté vacío ni repetido y que haya productos antes de guardar
 class CreatePage extends StatefulWidget {
   final Pedido? pedidoExistente;
   final Homeviewmodel homeviewmodel;
