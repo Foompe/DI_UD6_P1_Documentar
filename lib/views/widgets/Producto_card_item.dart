@@ -31,14 +31,14 @@ class ProductoCardItem extends StatelessWidget {
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12)
-        ),
-        margin: const EdgeInsets.symmetric(vertical: 8),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 8),
       child: Container(
         height: 75,
         child: Row(
           children: [
             
-            //Imagen
+            // Imagen
             Container(
               width: 70,
               height: 70,
@@ -56,10 +56,10 @@ class ProductoCardItem extends StatelessWidget {
               ),
             ),
 
-            //Separador
+            // Separador
             const SizedBox(width: 16),
 
-            //Nombre y precio
+            // Nombre y precio
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +88,7 @@ class ProductoCardItem extends StatelessWidget {
               )
             ),
 
-            //Cantidad
+            // Cantidad
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
               margin: const EdgeInsets.only(right: 12),
@@ -98,33 +98,35 @@ class ProductoCardItem extends StatelessWidget {
                 border: Border.all(color: Colors.grey.shade300)
               ),
 
-
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
 
-                  //restar uds (si hay)
-                  SizedBox(
-                    width: 40,
-                    height: 40,
-                    child: ElevatedButton(
-                      onPressed: cantidad > 0 ? onQuitar : null, 
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: cantidad > 0 ? Color(0xFFC62828) : Colors.grey,
-                        minimumSize: Size.zero,
-                        padding: EdgeInsets.zero,
-                        elevation: cantidad > 0 ? 3 : 0, //Sale sombra si esta "activado"
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        )
+                  // Restar unidades (si hay) con Tooltip
+                  Tooltip(
+                    message: 'Quitar una unidad',
+                    child: SizedBox(
+                      width: 40,
+                      height: 40,
+                      child: ElevatedButton(
+                        onPressed: cantidad > 0 ? onQuitar : null, 
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: cantidad > 0 ? Color(0xFFC62828) : Colors.grey,
+                          minimumSize: Size.zero,
+                          padding: EdgeInsets.zero,
+                          elevation: cantidad > 0 ? 3 : 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)
+                          )
+                        ),
+                        child: const Icon(Icons.remove, size: 24, color: Colors.white)
                       ),
-                      child: const Icon(Icons.remove, size: 24, color: Colors.white)
-                      ),
+                    ),
                   ),
 
                   const SizedBox(width: 14),
 
-                  //Cantidad
+                  // Cantidad
                   Text(
                     "$cantidad",
                     style: const TextStyle(
@@ -136,23 +138,26 @@ class ProductoCardItem extends StatelessWidget {
 
                   const SizedBox(width: 16),
 
-                  //añadir uds
-                  SizedBox(
-                    width: 40,
-                    height: 40,
-                    child: ElevatedButton(
-                      onPressed: onAgregar, 
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF673AB7),
-                        minimumSize: Size.zero,
-                        padding: EdgeInsets.zero,
-                        elevation: 3,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        )
+                  // Añadir unidades con Tooltip
+                  Tooltip(
+                    message: 'Añadir una unidad',
+                    child: SizedBox(
+                      width: 40,
+                      height: 40,
+                      child: ElevatedButton(
+                        onPressed: onAgregar, 
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF673AB7),
+                          minimumSize: Size.zero,
+                          padding: EdgeInsets.zero,
+                          elevation: 3,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)
+                          )
+                        ),
+                        child: const Icon(Icons.add, size: 24, color: Colors.white)
                       ),
-                      child: const Icon(Icons.add, size: 24, color: Colors.white)
-                      ),
+                    ),
                   ),
                 ],
               ),

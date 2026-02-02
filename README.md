@@ -14,12 +14,12 @@ Bar App es una aplicación móvil desarrollada en Flutter que permite gestionar 
 
 ## Características Principales
 
-- ✅ Gestión de pedidos por mesa
-- ✅ Catálogo de productos (bebidas y comidas)
-- ✅ Cálculo automático del total
-- ✅ Edición de pedidos existentes
-- ✅ Interfaz intuitiva y responsive
-- ✅ Validación de nombres de mesa únicos
+- Gestión de pedidos por mesa
+- Catálogo de productos (bebidas y comidas)
+- Cálculo automático del total
+- Edición de pedidos existentes
+- Interfaz intuitiva y responsive
+- Validación de nombres de mesa únicos
 
 ## Estructura del Proyecto
 ```
