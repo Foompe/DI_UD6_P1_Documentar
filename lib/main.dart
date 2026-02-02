@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: "Bar App",
       initialRoute: HomePage.nombreRuta,
       routes: {
-        HomePage.nombreRuta: (_) => const HomePage(),     //Ruta principal
+        HomePage.nombreRuta: (_) => const HomePage(), 
         DetallesPage.nombreRuta: (context) {
           final pedido = ModalRoute.of(context)!.settings.arguments as Pedido;
           return DetallesPage(pedido: pedido);

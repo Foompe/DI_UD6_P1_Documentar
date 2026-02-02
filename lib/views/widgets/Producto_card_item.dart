@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:t4_1_navegacion/models/Producto.dart';
+import 'package:t4_1_navegacion/models/producto.dart';
 
-
+/// Widget que representa una tarjeta de producto con opciones para agregar o quitar unidades.
+/// 
+/// Muestra una card con la imagen, nombre, precio y controles para ajustar la cantidad del producto.
+/// 
+/// Parametros:
+/// [producto]: El producto a mostrar.
+/// [cantidad]: La cantidad actual del producto.
+/// [onAgregar]: Callback que se ejecuta al agregar una unidad.
+/// [onQuitar]: Callback que se ejecuta al quitar una unidad.
+/// 
 class ProductoCardItem extends StatelessWidget {
   final Producto producto;
   final int cantidad;

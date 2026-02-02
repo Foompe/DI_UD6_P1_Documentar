@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:t4_1_navegacion/viewmodels/Pedidos_viewmodel.dart';
-import 'package:t4_1_navegacion/views/widgets/Producto_card_item.dart';
+import 'package:t4_1_navegacion/views/widgets/producto_card_item.dart';
 
 class Productospage extends StatefulWidget {
   final PedidosViewmodel viewmodel;

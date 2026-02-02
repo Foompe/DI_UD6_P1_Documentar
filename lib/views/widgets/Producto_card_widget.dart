@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:t4_1_navegacion/models/Producto.dart';
+import 'package:t4_1_navegacion/models/producto.dart';
 
-
+/// Widget que representa una tarjeta de producto mostrando su imagen, nombre y cantidad.
+/// 
+/// Muestra una card con la imagen del producto, su nombre y la cantidad disponible.
+/// 
+/// Parametros:
+/// [producto]: El producto a mostrar.
+/// [cantidad]: La cantidad actual del producto.
+///   
 class ProductoCardWidget extends StatelessWidget {
   final Producto producto;
   final int cantidad;

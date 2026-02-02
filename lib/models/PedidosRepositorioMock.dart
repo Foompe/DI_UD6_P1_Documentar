@@ -1,6 +1,8 @@
 import 'package:t4_1_navegacion/models/pedido.dart';
 import 'package:t4_1_navegacion/models/productos_data.dart';
 
+/// Clase mock para simular un repositorio de pedidos
+/// Esta clase proporciona datos de prueba para los pedidos.
 class Pedidosrepositoriomock {
   List<Pedido> obtenerPedidosPrueba() {
     return [

@@ -1,19 +1,17 @@
-import 'package:t4_1_navegacion/models/Producto.dart';
+import 'package:t4_1_navegacion/models/producto.dart';
 
+///Clase que representa un pedido de productos
 class Pedido {
 
-  //Atributos
   String nombreMesa;
   final Map<Producto, int> productos;
 
-  //Constructor
   Pedido({
     required this.nombreMesa,
     Map<Producto, int>? productos,
   }): productos = productos ?? {};
 
-  //Métodos
-  //Añadir/sumar
+  ///Metodo para agregar un producto
   void agregarProducto(Producto p) {
     if(productos.containsKey(p)) {
       productos[p] = productos[p]! +1;
@@ -22,7 +20,7 @@ class Pedido {
     }
   }
 
-  //restar
+  ///Metodo para restar un producto
   void restarProducto(Producto p) {
     if(!productos.containsKey(p)) return;
 
@@ -33,7 +31,8 @@ class Pedido {
     }
   }
 
-  //Calculo total
+  ///Metodo para calcular el total del pedido
+  ///@return total del pedido double
   double calcularTotal() {
     double total = 0;
 
@@ -45,5 +44,4 @@ class Pedido {
     }
     return total;
   }
-
 }

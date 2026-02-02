@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:t4_1_navegacion/models/pedido.dart';
 
-
+/// Widget que representa una tarjeta de pedido en la lista de pedidos.
+/// Recibe un objeto [Pedido] y una función [onTap] que se ejecuta al pulsar la tarjeta.
+/// 
+/// Muestra icono, nombre de la mesa, cantidad de productos y precio total del pedido.
+/// 
+/// Parametros:
+/// - [pedido]: Objeto de tipo [Pedido] que contiene la información del pedido.
+/// - [onTap]: Función que se ejecuta al pulsar la tarjeta.
 class PedidoCardWidget extends StatelessWidget {
   final Pedido pedido;
   final VoidCallback onTap;
@@ -11,6 +18,7 @@ class PedidoCardWidget extends StatelessWidget {
     required this.pedido,
     required this.onTap,
   });
+
 
   @override
   Widget build(BuildContext context) {

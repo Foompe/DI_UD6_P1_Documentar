@@ -1,5 +1,12 @@
-import 'package:t4_1_navegacion/models/Producto.dart';
+import 'package:t4_1_navegacion/models/producto.dart';
 
+
+/// Lista de productos disponibles
+/// Cada producto tiene una imagen, un nombre y un precio
+/// La imagen es una ruta relativa a la carpeta assets/img
+/// El nombre es una cadena de texto
+/// El precio es un número decimal
+/// Esta lista se utiliza para mostrar los productos en la aplicación
 final List<Producto> productosDisponibles = [
   Producto(imagen: "assets/img/cocacola.png", nombre: "Cola Cola", precio: 2.5),
   Producto(imagen: "assets/img/fanta.png", nombre: "Fanta", precio: 2.3),

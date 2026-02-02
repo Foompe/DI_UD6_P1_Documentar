@@ -1,11 +1,11 @@
+/// Modelo de Producto
+/// Define la estructura de un producto con sus atributos principales.
 class Producto {
 
-  //Parametros
   final String imagen;
   final String nombre;
   final double precio;
 
-  //Constructor
   Producto({
     required this.imagen,
     required this.nombre,
