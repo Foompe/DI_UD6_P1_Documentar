@@ -1,6 +1,17 @@
 import 'package:t4_1_navegacion/models/producto.dart';
 
 ///Clase que representa un pedido de productos
+///
+/// Contiene el nombre de la mesa y un mapa de productos con sus cantidades.
+/// El mapa permite tener múltiples productos distintos con sus respectivas cantidades.
+/// 
+/// Ejemplo de uso:
+/// ```dart
+/// final pedido = Pedido(nombreMesa: "Mesa 5");
+/// pedido.agregarProducto(cerveza);
+/// pedido.agregarProducto(hamburguesa);
+/// print(pedido.calcularTotal()); // Muestra el total
+/// ```
 class Pedido {
 
   String nombreMesa;

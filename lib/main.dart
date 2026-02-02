@@ -5,7 +5,6 @@ import 'package:t4_1_navegacion/views/HomePage.dart';
 
 /// Punto de entrada de la aplicación.
 /// Define las rutas y la configuración inicial de la aplicación.
-/// Utiliza [HomePage] como pantalla inicial y [DetallesPage] para mostrar los detalles de un pedido.
 void main() {
   runApp(MyApp());
 }

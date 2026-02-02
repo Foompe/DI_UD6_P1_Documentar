@@ -44,9 +44,34 @@
       
 <section class="desc markdown">
   <h1 id="di_ud6_p1_documentar">DI_UD6_P1_Documentar</h1>
-<p>Proyecto que simula una app de un bar,</p>
-<p>##Tecnolias usadas</p>
-<p>##Caracteristicas principales</p>
+<p>Aplicación Flutter para la gestión de pedidos en un bar o restaurante.</p>
+<h2 id="descripcin">Descripción</h2>
+<p>Bar App es una aplicación móvil desarrollada en Flutter que permite gestionar pedidos. Se pueden crear pedidos asociados a mesas, añadir productos y visualizar el resumen con el total a pagar.</p>
+<h2 id="tecnologas-usadas">Tecnologías Usadas</h2>
+<ul>
+<li><strong>Flutter</strong> - Framework de desarrollo multiplataforma</li>
+<li><strong>Dart</strong> - Lenguaje de programación</li>
+<li><strong>Material Design</strong> - Sistema de diseño visual</li>
+</ul>
+<h2 id="caractersticas-principales">Características Principales</h2>
+<ul>
+<li>✅ Gestión de pedidos por mesa</li>
+<li>✅ Catálogo de productos (bebidas y comidas)</li>
+<li>✅ Cálculo automático del total</li>
+<li>✅ Edición de pedidos existentes</li>
+<li>✅ Interfaz intuitiva y responsive</li>
+<li>✅ Validación de nombres de mesa únicos</li>
+</ul>
+<h2 id="estructura-del-proyecto">Estructura del Proyecto</h2>
+<pre class="language-dart"><code>lib/
+├── models/          # Modelos de datos
+├── viewmodels/      # Lógica de negocio
+└── views/           # Interfaces de usuario
+    └── widgets/     # Componentes reutilizables
+</code></pre>
+<h2 id="autor">Autor</h2>
+<p><strong>Rubén Fompedriña Añón</strong><br>
+<a href="mailto:foompe@gmail.com">foompe@gmail.com</a></p>
 </section>
 
 
@@ -69,6 +94,13 @@
 
           <dt id="PedidosRepositorioMock">
   <span class="name"><a href="models_PedidosRepositorioMock/">models\PedidosRepositorioMock</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="Producto">
+  <span class="name"><a href="models_Producto/">models\Producto</a></span> 
 
 </dt>
 <dd>
@@ -130,6 +162,13 @@
 <dd>
 </dd>
 
+          <dt id="Pedido_card_widget">
+  <span class="name"><a href="views_widgets_Pedido_card_widget/">views\widgets\Pedido_card_widget</a></span> 
+
+</dt>
+<dd>
+</dd>
+
           <dt id="pedido_card_widget">
   <span class="name"><a href="views_widgets_pedido_card_widget/">views\widgets\pedido_card_widget</a></span> 
 
@@ -137,8 +176,22 @@
 <dd>
 </dd>
 
+          <dt id="Producto_card_item">
+  <span class="name"><a href="views_widgets_Producto_card_item/">views\widgets\Producto_card_item</a></span> 
+
+</dt>
+<dd>
+</dd>
+
           <dt id="producto_card_item">
   <span class="name"><a href="views_widgets_producto_card_item/">views\widgets\producto_card_item</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="Producto_card_widget">
+  <span class="name"><a href="views_widgets_Producto_card_widget/">views\widgets\Producto_card_widget</a></span> 
 
 </dt>
 <dd>
@@ -171,6 +224,7 @@
       <li><a href="main/">main</a></li>
       <li><a href="models_pedido/">models\pedido</a></li>
       <li><a href="models_PedidosRepositorioMock/">models\PedidosRepositorioMock</a></li>
+      <li><a href="models_Producto/">models\Producto</a></li>
       <li><a href="models_producto/">models\producto</a></li>
       <li><a href="models_productos_data/">models\productos_data</a></li>
       <li><a href="viewmodels_HomeViewModel/">viewmodels\HomeViewModel</a></li>
@@ -179,8 +233,11 @@
       <li><a href="views_DetallesPage/">views\DetallesPage</a></li>
       <li><a href="views_HomePage/">views\HomePage</a></li>
       <li><a href="views_ProductosPage/">views\ProductosPage</a></li>
+      <li><a href="views_widgets_Pedido_card_widget/">views\widgets\Pedido_card_widget</a></li>
       <li><a href="views_widgets_pedido_card_widget/">views\widgets\pedido_card_widget</a></li>
+      <li><a href="views_widgets_Producto_card_item/">views\widgets\Producto_card_item</a></li>
       <li><a href="views_widgets_producto_card_item/">views\widgets\producto_card_item</a></li>
+      <li><a href="views_widgets_Producto_card_widget/">views\widgets\Producto_card_widget</a></li>
       <li><a href="views_widgets_producto_card_widget/">views\widgets\producto_card_widget</a></li>
 </ol>
 

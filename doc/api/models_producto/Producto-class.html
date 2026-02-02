@@ -54,8 +54,16 @@
 
     
 <section class="desc markdown">
-  <p>Modelo de Producto
-Define la estructura de un producto con sus atributos principales.</p>
+  <p>Modelo que representa un producto del catálogo de productos.</p>
+<p>Esta clase es inmutable y contiene la información básica
+de cada producto disponible para pedir.</p>
+<p>Ejemplo de uso:</p>
+<pre class="language-dart"><code class="language-dart">final cerveza = Producto(
+  imagen: "assets/img/cerveza.png",
+  nombre: "Cerveza",
+  precio: 2.85
+);
+</code></pre>
 </section>
 
 
@@ -97,7 +105,7 @@ Define la estructura de un producto con sus atributos principales.</p>
 
 </dt>
 <dd>
-  
+  Ruta de la imagen del producto en la carpeta assets
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -109,7 +117,7 @@ Define la estructura de un producto con sus atributos principales.</p>
 
 </dt>
 <dd>
-  
+  Nombre del producto
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -121,7 +129,7 @@ Define la estructura de un producto con sus atributos principales.</p>
 
 </dt>
 <dd>
-  
+  Precio del producto en euros
   <div class="features"><span class="feature">final</span></div>
 
 </dd>

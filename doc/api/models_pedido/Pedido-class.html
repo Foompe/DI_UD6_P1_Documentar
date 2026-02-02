@@ -55,6 +55,14 @@
     
 <section class="desc markdown">
   <p>Clase que representa un pedido de productos</p>
+<p>Contiene el nombre de la mesa y un mapa de productos con sus cantidades.
+El mapa permite tener múltiples productos distintos con sus respectivas cantidades.</p>
+<p>Ejemplo de uso:</p>
+<pre class="language-dart"><code class="language-dart">final pedido = Pedido(nombreMesa: "Mesa 5");
+pedido.agregarProducto(cerveza);
+pedido.agregarProducto(hamburguesa);
+print(pedido.calcularTotal()); // Muestra el total
+</code></pre>
 </section>
 
 

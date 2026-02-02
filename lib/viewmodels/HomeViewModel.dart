@@ -7,6 +7,7 @@ import 'package:t4_1_navegacion/models/pedido.dart';
 /// Extiende ChangeNotifier para notificar a los listeners sobre cambios en los datos.
 /// 
 /// Proporciona métodos para cargar, agregar y actualizar pedidos.
+/// Utiliza un repositorio mock para simular la obtención de datos.
 class Homeviewmodel extends ChangeNotifier{
   final Pedidosrepositoriomock _repo;
   List<Pedido> pedidos = [];

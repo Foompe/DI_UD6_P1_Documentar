@@ -10,6 +10,8 @@ import 'package:t4_1_navegacion/viewmodels/HomeViewModel.dart';
 /// 
 /// Proporciona métodos para agregar y quitar productos del pedido,
 /// así como para validar el nombre de la mesa.
+/// 
+/// Utiliza el HomeViewModel para acceder a la lista de pedidos existentes.
 class PedidosViewmodel extends ChangeNotifier {
   Pedido pedido;
   late bool esEdicion;
